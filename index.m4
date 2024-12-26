@@ -1,21 +1,10 @@
+include(sitemacs.m4)dnl
 <html>
 <head>
     <title>hai!</title>
 </head>
 <body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
-    <font face="serif">
-        <center>
-            <p>
-                <h1>lisa felidae</h1>
-                <a href="index.html">[home]</a> |
-                <a href="meownet.html">[meownet]</a> |
-                <a href="credits.html">[credits]</a> |
-                <a href="notes.html">[notes]</a> |
-                <a href="pictures.html">[pictures]</a> |
-                <a href="privacy.html">[privacy]</a>
-            </p>
-        </center>
-    </font>
+    NAVBAR()dnl
     <font face="serif" size="3">
         <p><h1>hai! :3</h1></p>
         <p>welcome to my css-less website!</p>
@@ -46,23 +35,7 @@
             <li><a href="https://julimiro.eu/">Juli</a></li>
             <li><a href="https://x86.isafox.gay/">x86Overflow</a></li>
         </ul>
-        <center>
-            <a href="https://confusionunknown.nekoweb.org/"><image src="cnfunknown.gif" alt="ConfusionUnknown"></image></a>
-            <a href="https://julimiro.eu/"><image src="juli.gif" alt="Julimiro.eu"></image></a>
-            <a href="https://x86.isafox.gay/"><image src="overflow.gif" alt="x86Overflow"></image></a>
-            <a href="https://safebooru.org/index.php?page=post&s=list&tags=cat_girl+yuri"><image src="catgirlyuri.gif" alt="Catgirl yuri now!"></image></a>
-            <image src="gender.gif" alt="Trans your gender"></image>
-            <a href="https://www.iso.org/iso-8601-date-and-time-format.html"><image src="iso.png" alt="ISO 8601 Now!"></image></a>
-            <image src="paws.gif" alt="Made with my own two paws"></image>
-            <image src="transrights.gif" alt="Trans rights now!"></image>
-            <image src="transbian.png" alt="Trans flag and lesbian flag"></image>
-            <image src="ihatelinux.png" alt="I hate GNU/Linux"></image>
-            <br>
-            <font face="serif" size="3">
-                <p><i>Page last updated on 2024-12-03.</i></p>
-                <p><i>© 2024 Lisa Felidae</i></p>
-            </font>
-        </center>
+        BUTTONS()dnl
     </font>
 </body>
 </html>

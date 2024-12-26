@@ -1,9 +1,5 @@
-<html>
-<head>
-    <title>credits!</title>
-</head>
-<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
-    <font face="serif">
+changequote({,})dnl
+define({NAVBAR},{<font face="serif">
         <center>
             <p>
                 <h1>lisa felidae</h1>
@@ -16,13 +12,8 @@
             </p>
         </center>
     </font>
-    <font face="serif" size="3">
-        <h1>Cool folks who inspired this site:</h1>
-        <ul>
-            <li><p><a href="https://confusionunknown.nekoweb.org/">ConfusionUnknown</a>, for the colors on this webpage</p></li>
-            <li><p>HackerSmacker, for the navigation bar</p></li>
-        </ul>
-        <center>
+})dnl
+define({BUTTONS},{<center>
             <a href="https://confusionunknown.nekoweb.org/"><image src="cnfunknown.gif" alt="ConfusionUnknown"></image></a>
             <a href="https://julimiro.eu/"><image src="juli.gif" alt="Julimiro.eu"></image></a>
             <a href="https://x86.isafox.gay/"><image src="overflow.gif" alt="x86Overflow"></image></a>
@@ -39,6 +30,4 @@
                 <p><i>© 2024 Lisa Felidae</i></p>
             </font>
         </center>
-    </font>
-</body>
-</html>
+})dnl
