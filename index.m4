@@ -17,7 +17,7 @@ include(sitemacs.m4)dnl
         <br>
         <p><h3>things i am doing right now:</h3></p>
         <ul>
-            <li>thinking about kissing my gf and bf :3</li>
+            <li>thinking about kissing my gf and bf and partner :3</li>
             <li>being dysphoric</li>
         </ul>
         <br>

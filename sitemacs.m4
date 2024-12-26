@@ -1,5 +1,5 @@
 changequote({,})dnl
-define(DATE,esyscmd(bash -c "date +%F | tr -d '\n'"))
+define(DATE,esyscmd(bash -c "date +%F | tr -d '\n'"))dnl
 define({NAVBAR},{<font face="serif">
         <center>
             <p>
