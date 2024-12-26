@@ -18,6 +18,7 @@ define({BUTTONS},{<center>
             <a href="https://confusionunknown.nekoweb.org/"><image src="cnfunknown.gif" alt="ConfusionUnknown"></image></a>
             <a href="https://julimiro.eu/"><image src="juli.gif" alt="Julimiro.eu"></image></a>
             <a href="https://x86.isafox.gay/"><image src="overflow.gif" alt="x86Overflow"></image></a>
+            <a href="https://wah.moe/"><image src="wah.png" alt="wah.moe"></image></a>
             <a href="https://safebooru.org/index.php?page=post&s=list&tags=cat_girl+yuri"><image src="catgirlyuri.gif" alt="Catgirl yuri now!"></image></a>
             <image src="gender.gif" alt="Trans your gender"></image>
             <a href="https://www.iso.org/iso-8601-date-and-time-format.html"><image src="iso.png" alt="ISO 8601 Now!"></image></a>
