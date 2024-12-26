@@ -1,4 +1,5 @@
 changequote({,})dnl
+define(DATE,esyscmd(bash -c "date +%F | tr -d '\n'"))
 define({NAVBAR},{<font face="serif">
         <center>
             <p>
@@ -26,7 +27,7 @@ define({BUTTONS},{<center>
             <image src="ihatelinux.png" alt="I hate GNU/Linux"></image>
             <br>
             <font face="serif" size="3">
-                <p><i>Page last updated on 2024-12-03.</i></p>
+                <p><i>Page last updated on DATE().</i></p>
                 <p><i>© 2024 Lisa Felidae</i></p>
             </font>
         </center>
