@@ -10,6 +10,9 @@ include(sitemacs.m4)dnl
 			<p>
 				<a href="notes/asciiart.html">Some ASCII art</a>
 			</p>
+			<p>
+				<a href="notes/vmesa_timebomb.html">VM/ESA 2.4 time bomb fix</a>
+			</p>
 		</center>
 		BUTTONS()dnl
 	</font>
