@@ -40,6 +40,7 @@ include(sitemacs.m4)dnl
 			<li><a href="https://izder456.neocities.org/">izder456</a></li>
 			<li><a href="https://julimiro.eu/">Juli</a></li>
 			<li><a href="https://x86.isafox.gay/">x86Overflow</a></li>
+			<li><a href="https://knijn.one">Emma</a></li>
 		</ul>
 		BUTTONS()dnl
 	</font>

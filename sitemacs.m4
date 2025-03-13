@@ -29,7 +29,7 @@ define({BUTTONS},{<center>
 			<image src="ihatelinux.png" alt="I hate GNU/Linux"></image>
 			<br>
 			<font face="serif" size="3">
-				<p><i>Page last updated on DATE().</i></p>
+				<p><i>Page generated on DATE().</i></p>
 				<p><i>© YEAR() Lisa Felidae</i></p>
 			</font>
 		</center>
