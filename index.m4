@@ -35,7 +35,7 @@ include(sitemacs.m4)dnl
 			<li>HackerSmacker (link unavailable due to crawling concerns)</li>
 			<li><a href="https://confusionunknown.nekoweb.org/">ConfusionUnknown</a></li>
 			<li><a href="http://juliet.hs.vc/">Juliet</a></li>
-			<li><a href="http://wah.moe/">Floppydisk</a></li>
+			<li><a href="http://wah.moe/">Roscoe</a></li>
 			<li><a href="https://bassusteur.github.io/">Treble</a></li>
 			<li><a href="https://izder456.neocities.org/">izder456</a></li>
 			<li><a href="https://julimiro.eu/">Juli</a></li>
