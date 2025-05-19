@@ -6,7 +6,7 @@ include(sitemacs.m4)dnl
 <body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
 	NAVBAR()dnl
 	<font face="serif" size="3">
-		<h1>Hi, I'm Lisa.</h1>
+		<h1>Hi!</h1>
 		<p>Welcome to my css-less website!</p>
 		<p>My pronouns are it/she.</p>
 		<p>My main interests are currently:</p>
