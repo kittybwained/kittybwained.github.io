@@ -17,6 +17,9 @@ BODY_START()
 			<p>
 				<a href="notes/mvsesa_1403_exclam.html">MVS/ESA 5.2.2 1403 exclamation mark disappearing fix</a>
 			</p>
+			<p>
+				<a href="notes/musicsp_c370_link.html">Linking C/370 programs on MUSIC/SP</a>
+			</p>
 		</center>
 		BUTTONS()
 	</font>
