@@ -25,7 +25,6 @@ define({BUTTONS},{<center>
 			<a href="https://www.iso.org/iso-8601-date-and-time-format.html"><img src="/iso.png" alt="ISO 8601 Now!"></img></a>
 			<img src="/paws.gif" alt="Made with my own two paws"></img>
 			<img src="/transrights.gif" alt="Trans rights now!"></img>
-			<img src="/transbian.png" alt="Trans flag and lesbian flag"></img>
 			<img src="/ihatelinux.png" alt="I hate GNU/Linux"></img>
 			<br>
 			<font face="serif" size="3">
