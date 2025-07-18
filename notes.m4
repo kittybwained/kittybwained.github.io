@@ -20,6 +20,9 @@ BODY_START()
 			<p>
 				<a href="notes/musicsp_c370_link.html">Linking C/370 programs on MUSIC/SP</a>
 			</p>
+			<p>
+			    <a href="notes/vmnoskip.html">Making the password field not skip on VM/ESA 2.4</a>
+			</p>
 		</center>
 		BUTTONS()
 	</font>
