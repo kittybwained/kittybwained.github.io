@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>uSCRIPT - Neko Data Systems</title>
+</head>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" link="#e56161" alink="#e56161" vlink="#c13d3d">
+    <table width="100%" height="90%" border="0" cellspacing="0" cellpadding="4">
+        <tbody>
+            <tr>
+                <td bgcolor="#c13d3d" rowspan="2" width="5">
+                    <font size="1">&nbsp;</font>
+                </td>
+                <td bgcolor="#fff4cc" rowspan="2" valign="top" width="160">
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="4">
+                        <b><a href="/nds/index.html">Home</a></b>
+                    </font>
+                    <br>
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="4">
+                        <b><a href="/nds/news.html">News</a></b>
+                    </font>
+                    <br>
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="4">
+                        <b>
+                            <font color="#c13d3d">Projects:</font>
+                        </b>
+                    </font>
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="4">
+                        &nbsp;&nbsp;<a href="/nds/projects/uscript/index.html">uSCRIPT</a>
+                    </font>
+                    <br>
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="4">
+                        <b><a href="/nds/docs.html">Documentation</a></b>
+                    </font>
+                    <br>
+                    <br>
+                </td>
+                <td bgcolor="#ffffff" rowspan="2" width="5">
+                    <font size="1">&nbsp;</font>
+                </td>
+                <td rowspan="2" align="LEFT" valign="TOP">
+                    <br>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="3">
+                        <h2>
+                            <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" color="#c13d3d">
+                                uSCRIPT
+                            </font>
+                        </h2>
+                        <p>
+                            uSCRIPT (pronounced <i>micro script</i> or <i>u-script</i>) is a highly portable SCRIPT-like
+                            typesetting
+                            system.
+                            It is implemented in C89, so it should compile just about anywhere.
+                            <br>
+                            Currently, it's been tested on VM/ESA 2.4, Windows, UNIX (Debian 13, UnixWare 7.1.4).
+                        </p>
+                        <img src="uscript on VMESA 2.4.png" alt="image of uSCRIPT running on VM/ESA 2.4 in debug mode.">
+                        <br>
+                        <i>
+                            uSCRIPT in debug mode, running on VM/ESA 2.4. The contents of TEST PS are garbled as it is
+                            in ASCII.
+                        </i>
+                        <h3>Changelog</h3>
+                        <h4>2025-07-07</h4>
+                        <img src="evie is a cute kittygirl.png" alt="Picture of a piece of paper with a heading saying TOP SECRET, and some text saying
+                            Evie is a cute kittygirl" width="964">
+                        <br>
+                        <i>The first uSCRIPT-generated document printed to a real PostScript printer at my friend's
+                            house, from an RS/6000 running AIX.</i>
+                        <p>Created this project page. Currently supported control words
+                            are:</p>
+                        <ul>
+                            <li>.CE [Center]</li>
+                            <li>.BR [Break]</li>
+                            <li>.BL [Blank Line]</li>
+                            <li>.SP [Space]</li>
+                            <li>.JU [Justify]</li>
+                            <li>.SE [Set Symbol]</li>
+                            <li>.SU [Substitute Symbols]</li>
+                            <li>.RH [Running Heading]</li>
+                            <li>.RF [Running Footing]</li>
+                            <li>.DF [Define Font]</li>
+                            <li>.BF [Begin Font]</li>
+                            <li>.PF [Previous Font]</li>
+                        </ul>
+                        <p>Currently, the only supported output language is PostScript, with Type 1 fonts.</p>
+                        <p>uSCRIPT has been tested to compile on:</p>
+                        <ul>
+                            <li>C for VM/ESA V3R1 on VM/ESA 2.4 (requires LONGNAME option)</li>
+                            <li>MSVC 19.44.35207.1 on Windows 11</li>
+                            <li>Clang 19.1.0 on Windows 11</li>
+                            <li>GCC 14.2.0 on Debian 13</li>
+                            <li>Compaq C V6.4-005 on OpenVMS VAX V7.3
+                                <br>&nbsp;&nbsp;&nbsp;Note: uSCRIPT does not correctly work on VMS yet; there are issues with lines getting truncated in the output file.
+                            </li>
+                            <li>Optimizing C Compilation System (CCS) 4.1 on UnixWare 7.1.4</li>
+                            <li>Open Watcom C/C++32 2.0beta1 on Windows 11</li>
+                            <li>C for System/370 Version 3.100 (Whitesmiths) on VM/ESA 1.1 370 Feature (needs some
+                                modifications)
+                            <li>XL C/C++ 3.6.6 on AIX 4.3</li>
+                            <li>IBM VisualAge C++ Professional for AIX Version 4.0.2 on AIX 4.3</li>
+                            <li>Compaq C V6.5-011 on Tru64 UNIX V5.0 SL910</li>
+                            <li>IBM C/370 Version 1 Release 2 on MUSIC/SP ESA 5.3<br>
+                                &nbsp;&nbsp;&nbsp;(Note: While the program <i>can</i>
+                                compile, link, and start (with some modifications), it does not work properly, and I
+                                cannot debug it
+                                <br>&nbsp;&nbsp;&nbsp;as the compiler is so utterly broken
+                                that it takes about 15 minutes of changing
+                                random things in a file to get the compiler to not crash
+                                <br>&nbsp;&nbsp;&nbsp;or read garbage and throw phantom errors.
+                                I do not recommend using C/370 Version 1 Release 2 on MUSIC/SP.)
+                            </li>
+                            <li>Microsoft Visual C++ 5.0 on Windows Terminal Server 4.0</li>
+                            <li>Watcom C/C++ CL Clone for 386 Version 11.0 on Windows Terminal Server 4.0</li>
+                            <li>Metrowerks CodeWarrior Pro 4 on Windows Terminal Server 4.0</li>
+                            <li>MSVC 2010 (10.0) on Interix 6.1 (Windows 7)</li>
+                        </ul>
+                        <h3>Future Plans</h3>
+                        <ul>
+                            <li>Implement most of the same control words implemented in SCRIPT</li>
+                            <li>Implement the GML starter set</li>
+                            <li>Implement an eqn-like mathematical formula formatter</li>
+                            <li>Unicode support</li>
+                            <li>Native PDF output with OpenType fonts</li>
+                        </ul>
+                        <h3>Availability</h3>
+                        <p>uSCRIPT is a work-in-progress project and is currently not generally available.</p>
+                        <h3>Disclaimer</h3>
+                        <p>uSCRIPT is in no way affiliated with International Business Machines Corporation or the
+                            University of Waterloo. No IBM or University of Waterloo source code was used in the
+                            development of uSCRIPT.</p>
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" height="10%" border="0" cellspacing="0" cellpadding="4">
+        <tbody>
+            <tr>
+                <td bgcolor="#c13d3d" rowspan="2" width="5">
+                    <font size="1">&nbsp;</font>
+                </td>
+                <td bgcolor="#fff4cc" rowspan="2" valign="top" width="160">
+                    <font size="1">&nbsp;</font>
+                </td>
+                <td bgcolor="#ffffff" rowspan="2" width="5">
+                    <font size="1">&nbsp;</font>
+                </td>
+                <td>
+                    <font face="Helvetica Neue LT Std, Helvetica LT Std, Helvetica, sans-serif" size="3">
+                        <center>
+                            <a href="/nds"><img src="/nds/neko 88x31.gif" alt="Neko Data Systems 88x31 button"></a>
+                            <br>
+                            <br>
+                            <i>
+                                © Copyright 2025 Lisa Felidae and Neko Data Systems, all rights reserved.
+                                <br>
+                                <small>
+                                    "Neko Data Systems" is a fictitious business name/trade name of Lisa Felidae.
+                                </small>
+                            </i>
+                        </center>
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
