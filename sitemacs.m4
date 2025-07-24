@@ -28,7 +28,7 @@ define({BUTTONS},{<center>
 			<br>
 			<font face="serif" size="3">
 				<p><i>Page generated on DATE().</i></p>
-				<p><i>© Copyright Lisa Felidae and Neko Data Systems.</i></p>
+				<p><i>Copyright © Lisa Felidae trading as Neko Data Systems. All rights reserved.</i></p>
 				<font face="serif" size="2">
 					<p><i>Neko Data Systems is a fictitious business name/trade name of Lisa Felidae.</i></p>
 				</font>
