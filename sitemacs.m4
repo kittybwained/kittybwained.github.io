@@ -16,6 +16,7 @@ define({NAVBAR},{<font face="serif">
 	</font>
 })dnl
 define({BUTTONS},{<center>
+			<a href="/nds"><img src="/nds/neko 88x31.gif" alt="Neko Data Systems></img></a>
 			<a href="http://aliceisvery.gay/"><img src="/cnfunknown.gif" alt="ConfusionUnknown"></img></a>
 			<a href="https://julimiro.eu/"><img src="/juli.gif" alt="Julimiro.eu"></img></a>
 			<a href="https://x86.isafox.gay/"><img src="/overflow.gif" alt="x86Overflow"></img></a>
