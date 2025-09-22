@@ -9,7 +9,6 @@ define({NAVBAR},{<font face="serif">
 				<a href="/nds/index.html">[Neko Data Systems]</a> |
 				<a href="/credits.html">[Credits]</a> |
 				<a href="/notes.html">[Notes]</a> |
-				<a href="/pictures.html">[Pictures]</a> |
 				<a href="/privacy.html">[Privacy]</a>
 			</p>
 		</center>

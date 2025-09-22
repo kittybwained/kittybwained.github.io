@@ -6,7 +6,7 @@ BODY_START()
 	<font face="serif" size="3">
 		<h1>Cool folks who inspired this site:</h1>
 		<ul>
-			<li><p><a href="https://confusionunknown.nekoweb.org/">ConfusionUnknown</a>, for the colors on this webpage</p></li>
+			<li><p><a href="https://aliceisvery.gay">Alice</a>, for the colors on this webpage</p></li>
 			<li><p>HackerSmacker, for the navigation bar</p></li>
 		</ul>
 		BUTTONS()
