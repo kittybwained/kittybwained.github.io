@@ -23,6 +23,9 @@ BODY_START()
 			<p>
 			    <a href="notes/vmnoskip.html">Making the password field not skip on VM/ESA 2.4</a>
 			</p>
+			<p>
+				<a href="notes/7vm30localmod.html">z/VM 7.3 CP modification</a>
+			</p>
 		</center>
 		BUTTONS()
 	</font>

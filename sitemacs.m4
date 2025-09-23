@@ -35,7 +35,7 @@ define({BUTTONS},{<center>
 			</font>
 		</center>
 })dnl
-define({BODY_START},{<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">})
+define({BODY_START},{<body bgcolor="fff1f1" text="000000" alink="f31b55" link="f31b55" vlink="f31b55">})
 define({BODY_END},{</body>})
 define({TITLE},{<head>
 	<title>$1</title>

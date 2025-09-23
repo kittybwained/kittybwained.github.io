@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>z/VM 7.3 CP modification</title>
+</head>
+
+<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+    <font face="serif" size="4">
+        <p>This is a guide on how to modify an assembler source file (file type ASSEMBLE) in the z/VM CP source code and rebuild the nucleus. Let's assume the file is called <code>HCPUSO ASSEMBLE</code>.</p>
+        <ol>
+            <li>Run <code>LOCALMOD HCPUSO ASSEMBLE</code>.</li>
+            <li>At the prompt, enter <code>1</code>.</li>
+            <li>You should now be in an XEDIT session. Here, you must make your required changes to the file. If you have already made the modifications, and saved the file somewhere else (say, <code>HCPUSO ASM00000 A</code>), you can do the following:
+                <ol><li>Run <code>del 999999</code> to remove all lines.</li>
+                <li>Run <code>GET HCPUSO ASM00000 A</code> to embed the preexisting file.</li></ol>
+            </li>
+            <li>Run <code>FILE</code>.</li>
+            <li>Watch for any errors. If all goes well, you should have an <code>HCPUSO AUXLCL</code>, <code>HCPUSO TXTL0001</code> (or some other number after <code>TXT</code>), and a <code>7VMCPR30 VVTLCL</code> on one of the CP minidisks.</li>
+            <li>Run <code>SERVICE CP BUILD</code>.</li>
+            <li>Run <code>PUT2PROD</code>.</li>
+            <li>Shut down and re-IPL.</li>
+        </ol>
+    </font>
+</body>
+
+</html>
