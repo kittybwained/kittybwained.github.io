@@ -6,7 +6,7 @@ BODY_START()
 	<font face="serif" size="3">
 		<h1>Hi!</h1>
 		<p>Welcome to my css-less website!</p>
-		<p>My pronouns are it/she.</p>
+		<p>My pronouns are she/her.</p>
 		<p>My main interests are currently:</p>
 	<ul>
 		<li>Computers and software development,</li>
@@ -19,7 +19,7 @@ BODY_START()
 		<br>
 		<h3>What I'm currently working on</h3>
 		<ul>
-			<li><a href="/nds/projects/uscript/index.html">A portable SCRIPT/VS-like typesetting system</a></li>
+			<li><a href="/nds/projects/uscript/index.html">A portable SCRIPT-like typesetting system</a></li>
 			<ul>
 				<li>Implemented in C89, with support for both mainframe and microcomputer platforms.</li>
 			</ul>
