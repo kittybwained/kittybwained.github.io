@@ -18,7 +18,7 @@ define({BUTTONS},{<center>
 			<a href="/nds"><img src="/nds/neko 88x31.gif" alt="Neko Data Systems></img></a>
 			<a href="http://aliceisvery.gay/"><img src="/cnfunknown.gif" alt="ConfusionUnknown"></img></a>
 			<a href="https://julimiro.eu/"><img src="/juli.gif" alt="Julimiro.eu"></img></a>
-			<a href="https://x86.isafox.gay/"><img src="/overflow.gif" alt="x86Overflow"></img></a>
+			<a href="https://lunaisafox.xyz/"><img src="/overflow.gif" alt="x86Overflow"></img></a>
 			<a href="https://safebooru.org/index.php?page=post&s=list&tags=cat_girl+yuri"><img src="/catgirlyuri.gif" alt="Catgirl yuri now!"></img></a>
 			<img src="/gender.gif" alt="Trans your gender"></img>
 			<a href="https://www.iso.org/iso-8601-date-and-time-format.html"><img src="/iso.png" alt="ISO 8601 Now!"></img></a>
