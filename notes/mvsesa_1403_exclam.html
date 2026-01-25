@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>MVS/ESA 5.2.2 1403 exclamation mark disappearing fix</title>
+</head>
+
+<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+    <font face="serif" size="4">
+        <p>
+            On MVS/ESA 5.2.2, if you try and print something containing an exclamation mark (or cent sign, broken pipe,
+            or backtick), it will be replaced by a space.
+            <br>
+            To fix this, you need to set <code>TRANS=NO</code> on your printer in JES2. Either edit
+            <code>SYS1.PARMLIB(JES2PARM)</code> and add it to the <code>PRT(1)</code> definition, or run
+            <code>$T PRINTER(1),TRANS=NO</code> in the MVS system console.
+        </p>
+        <p>
+            Credit goes to <a href="https://www.youtube.com/channel/UCFvM_17zCxRhXHIhOyg-N3Q">racingmars</a> in the
+            Moshix Discord server for figuring out how to fix this, I'm just writing it down here so I can remember it.
+        </p>
+    </font>
+</body>
+
+</html>

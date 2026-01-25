@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>MVS/ESA 5.2.2 enable "job ended" message</title>
+</head>
+
+<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+    <font face="serif" size="4">
+        <p>
+            By default, the P/390 MVS/ESA 5.2.2 ADCD has the JES2 "job ended" message disabled.
+            <br>
+            If you wish to reenable this, Edit
+            <code>SYS1.PARMLIB(MPFLST00)</code> and remove the line beginning with <code>$HASP395</code>. You can also
+            enable any other supressed messages here.
+        </p>
+        <p>
+            Credit goes to <a href="https://www.youtube.com/channel/UCFvM_17zCxRhXHIhOyg-N3Q">racingmars</a> in the
+            Moshix Discord server for figuring out how to fix this, I'm just writing it down here so I can remember it.
+        </p>
+    </font>
+</body>
+
+</html>
