@@ -14,7 +14,7 @@ BODY_START()
 		<li>OpenVMS,</li>
 		<li>IBM SCRIPT/VS and GML,</li>
 		<li>The Ada programming language,</li>
-		<li>Regular expressions, formal languages, and automata theory</li>
+		<li>Regular expressions, formal languages, and automata theory,</li>
 		<li>And a bunch of other things that I couldn't think of right now.</li>
 	</ul>
 		<br>
