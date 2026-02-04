@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Making the password field not skip on VM/ESA 2.4</title>
+</head>
+
+<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+    <font face="serif" size="4">
+        <p>First, log in as MAINT. Then, you must access the parmdisk. You probably already know how to do this, but if not:</p>
+        <pre>
+CPRELEASE A
+LINK * CF1 CF1 MW
+ACCESS CF1 Q
+        </pre>
+        <p>Now, you need to open INPTAREA SAMPLE Q in ISPF. Any other editor capable of hex editing will work, but the only one I know that can do that is ISPF. Run <code>HEX DATA</code> from the ISPF command line after opening the file.</p>
+        <p>Locate record 4 (the line with PASSWORD ===>). Find the sequence of 8 null bytes (<code>0000000000000000</code>). After this, you should see <code>1D70</code>, followed by a bunch of <code>40</code>.</p>
+        <p>Change <code>1D70</code> to <code>1D60110050</code>.</p>
+        <p>Ok, we're now done with the editing. Now, you must return the parmdisk back to CP. To do this, run:</p>
+        <pre>
+RELEASE Q
+DETACH CF1
+CPACCESS MAINT CF1 A RR SYNCH
+        </pre>
+        <p>Now, spin up a new terminal or reconnect, and your password field should no longer skip.</p>
+        <p>You may be wondering how I generated the datastream. This is the script I used:
+        <pre>
+/* */
+'IOS3270 INPTEST (SCRIOSD'
+PARSE VAR IOSD
+'PIPE VAR IOSD | DISK SCREEN DATASTRM A'
+        </pre>
+        <code>INPTEST IOS3270 A</code> contains:
+        <pre>
+.jx set ctl # type=(tab unp invisible)
+.CE+
+#        +
+        </pre>
+        Then, I just opened the datastream file in ISPF and cherrypicked bits of the datastream until it worked.
+        </p>
+    </font>
+</body>
+
+</html>

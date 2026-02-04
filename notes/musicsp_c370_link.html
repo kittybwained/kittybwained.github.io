@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Linking C/370 programs on MUSIC/SP</title>
+</head>
+
+<body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+    <font face="serif" size="4">
+        <p>
+            First, you must compile your program to object files. For each source file, run a job something like this
+            (this example assumes your source file is called AFM.C):
+        </p>
+        <pre>
+                /FILE SYSLIN NAME(AFM.TEXT) NEW(REPLACE)
+                /FILE SYSLIB PDS(*.H,$IBC:UPK.*.HDR)
+                /SYS REGION=16000
+                /LOAD C370
+                /JOB NOGO
+                /OPT MARGINS(1,80) NOSEQUENCE
+                /INC AFM.C
+        </pre>
+
+        <p>
+            Then, you need to link edit it. Create a new job like this:
+        <pre>
+                /FILE LMOD NAME(USCRIPT.LMOD) NEW(REPL) LR(128) RECFM(F)
+                /FILE SUBLIBOS PDS(*C370A,*C370B,*OS,*MUS)
+                /LOAD LKED
+                /JOB MODE=OS,MAP,NOGO,CALL
+                /INC AFM.TEXT
+                /INC CALLBACK.TEXT
+                /INC CODEPAGE.TEXT
+                /INC CONWORDS.TEXT
+                /INC FONT.TEXT
+                /INC HASHMAP.TEXT
+                /INC MESSAGES.TEXT
+                /INC PARSER.TEXT
+                /INC PATTERN.TEXT
+                /INC PS.TEXT
+                /INC SCRIPT.TEXT
+                /INC STATE.TEXT
+                /INC UTIL.TEXT
+                NAME USCRIPT
+                ENTRY MAIN
+            </pre>
+        where /FILE LMOD is the output load module, and the NAME statement at the end specifies the name of the member
+        within
+        that load module.
+        </p>
+        <p>
+            Now, you just need to run the program. For that, run this job:
+        <pre>
+                /FILE LMOD NAME(USCRIPT.LMOD)
+                /LOAD XMON
+                USCRIPT
+        </pre>
+        where the third record must be the name of the member in the load module. For passing parameters, use /PARM
+        before /LOAD.
+        </p>
+        <p>Note: If you wish to use C/370 Version 1 Release 2 on MUSIC/SP, you should probably reconsider, as the
+            compiler is extremely broken and will randomly crash or throw phantom errors all the time. I do not
+            recommend using it.</p>
+    </font>
+</body>
+
+</html>

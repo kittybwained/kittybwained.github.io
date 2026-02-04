@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>VM/ESA 2.4 time bomb patch</title>
+    </head>
+    <body bgcolor="fff1f1" text="000000" alink="fb6f92" link="fb6f92" vlink="f31b55">
+        <font face="serif" size="4">
+            <p>
+                VM/ESA 2.4 has an alleged "feature" where if your terminal dies, the VM your terminal was connected to will get FORCEd by the system if you dont reconnect within 15 minutes.
+                z/VM lets you disable this by setting <code>DISCONNECT_TIMEOUT</code> in <code>SYSTEM CONFIG</code> on the parmdisk, but unfortunately it's not possible to fix it this way on VM/ESA 2.4.
+            </p>
+            <p>
+                Thankfully, this can be fixed by modifying the CP source code. First, log in as <code>MAINT</code> and run:<pre>VMFSETUP ESA CP</pre>
+                Then, copy <code>HCPCFM ASSEMBLE P</code> to <code>HCPCFM ASSEMBLE A</code>. Edit <code>HCPCFM ASSEMBLE A</code>. Go to line 3213 and replace
+<pre>
+        TM    VMDCWAIT,VMDDSCWT Is user already timebombed?   @PC688YB
+        BO    CFMNORUN      Yes, once is enough. Just exit    @PC688YB
+</pre>
+                with
+<pre>
+        HCPCALL HCPCFFBG    SKIP TIMEBOMB AND KEEP RUNNING
+        B     SCANADJS      SKIP TIMEBOMB AND KEEP RUNNING    @PC688YB
+</pre>
+            </p>
+            <p>
+                Now, we need to reassemble CP. To do this, you will need to run:
+<pre>
+VMFHLASM HCPCFM ESA CP (LOGMOD $SELECT OUTMODE LOCALMOD
+VMFBLD PPF ESA CP CPLOAD (SERVICED
+</pre>
+            </p>
+            <p>
+                Next, you will need to copy the new load module to the parmdisk. If everything went well you should have a <code>CPLOAD MODULE K</code>, with a recent modify date. To check this, run:
+<pre>
+LI CPLOAD MODULE K (ALLDATE
+</pre>
+                To copy it to the parmdisk, run:
+<pre>
+CPRELEASE A
+LINK * CF1 CF1 MW
+ACC CF1 Q
+ERASE CPLOAD MODULE Q
+COPY CPLOAD MODULE K = = Q
+DET CF1
+CPACCESS MAINT CF1 A RR SYNCH
+</pre>
+            </p>
+            <p>Now just re-IPL and the time bomb should be patched out.</p>
+            <p>You may want to make a backup of <code>CPLOAD MODULE</code> on <code>MAINT CF1</code> before doing this. To do that, just copy <code>CPLOAD MODULE</code> to <code>CPOLD MODULE</code>. If you get an out of space error, you may have to first delete <code>CPOLD MODULE</code> instead of copying it with <code>REPLACE</code>.</p>
+        </font>
+    </body>
+</html>
