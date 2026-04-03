@@ -25,6 +25,7 @@ define({BUTTONS},{<br><center>
 			<img src="/paws.gif" alt="Made with my own two paws"></img>
 			<img src="/transrights.gif" alt="Trans rights now!"></img>
 			<img src="/ihatelinux.png" alt="I hate GNU/Linux"></img>
+			<img src="/notunderconstruction.png"" alt="This website is not under construction, you're looking at my best shot"></img>
 			<br>
 			<font face="serif" size="3">
 				<p><i>Page generated on DATE().</i></p>
