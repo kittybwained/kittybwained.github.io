@@ -48,7 +48,7 @@ include(nekomacs.m4)
                             <br>
                             <br>
                             <i>
-                                Copyright © Lisa Felidae trading as Neko Data Systems. All rights reserved.
+                                Copyright © Lisa Felidae known as Neko Data Systems. All rights reserved.
                                 <br>
                                 <small>
                                     "Neko Data Systems" or "Nekodata" is a fictitious business name/trade name of Lisa Felidae. Nekodata does not
